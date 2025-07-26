@@ -1,0 +1,48 @@
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+body{color:#333;line-height:1.6;background:#faf9f9}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:900px;margin:auto;padding:0 20px}
+
+/* HERO */
+.hero{height:100vh;background:url('../img/hero.jpg') center/cover no-repeat;display:flex;flex-direction:column;justify-content:center;color:#fff;text-align:center}
+.nav{position:absolute;top:20px;left:0;right:0;display:flex;justify-content:center;gap:30px;font-weight:600}
+.nav a{color:#fff;padding:6px 10px;border-bottom:2px solid transparent;transition:.3s}
+.nav a:hover{border-color:#fff}
+.hero__text{margin-top:40px}
+.hero h1{font-size:3.2rem;margin-bottom:.5rem}
+.accent{color:#ffe259;font-weight:700}
+.btn{display:inline-block;margin-top:1.2rem;padding:.9rem 2.2rem;border:2px solid #ffe259;color:#ffe259;font-weight:600;border-radius:30px;transition:.3s}
+.btn:hover{background:#ffe259;color:#111}
+
+/* SECTIONS */
+section{padding:100px 0}
+h2{font-size:2.2rem;margin-bottom:1.2rem;color:#222}
+
+/* ABOUT */
+.about{background:#fff;text-align:center}
+.profile-pic{width:150px;height:150px;border-radius:50%;margin:-175px auto 30px;border:6px solid #fff;object-fit:cover}
+
+/* EXPERIENCE */
+.timeline{list-style:none;border-left:3px solid #eee;margin-left:20px;padding-left:30px}
+.timeline li{position:relative;margin-bottom:40px}
+.timeline li::before{content:"";position:absolute;left:-39px;top:5px;width:15px;height:15px;border-radius:50%;background:#ffe259}
+
+/* PROJECTS */
+.projects{background:#f5f5f5}
+.grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:.3s}
+.card img{aspect-ratio:4/3;object-fit:cover}
+.card h3{margin:15px 20px 5px}
+.card p{margin:0 20px 20px;color:#555}
+
+/* CONTACT */
+.contact{background:#111;color:#fff;text-align:center}
+.contact a{color:#ffe259}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .hero h1{font-size:2.5rem}
+  .nav{flex-direction:column;gap:10px}
+}
